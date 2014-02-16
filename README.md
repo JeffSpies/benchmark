@@ -1,14 +1,12 @@
-=========
-benchmark
-=========
+# benchmark
 
-``benchmark`` is a Python benchmarking framework, similar to Steve Purcell's 
+``benchmark`` is a Python benchmarking framework, similar to Steve Purcell's
 ``unittest`` in basic structure. It's as simple as::
 
     import benchmark
 
     import math
-    
+
     class Benchmark_Sqrt(benchmark.Benchmark):
 
         each = 100 # allows for differing number of runs
@@ -42,7 +40,7 @@ benchmark
 
         def setUp(self):
             self.size = 750000
-    
+
     if __name__ == '__main__':
         benchmark.main(format="markdown", numberFormat="%.4g")
         # could have written benchmark.main(each=50) if the
@@ -75,5 +73,5 @@ which produces::
     `benchmark` v0.1.6 (http://jspi.es/benchmark) with Python 2.7.1
     Darwin-11.3.0-x86_64 on 2012-04-18 21:54:31.
 
-More examples are available in the example folder or visit 
+More examples are available in the example folder or visit
 http://jspi.es/benchmark for more information.
