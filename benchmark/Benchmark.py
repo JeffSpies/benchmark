@@ -1,4 +1,4 @@
-# Copyright 2012 Jeffrey R. Spies
+# Copyright 2012--2014 Jeffrey R. Spies
 # License: Apache License, Version 2.0
 # Website: http://jspi.es/benchmark
 
