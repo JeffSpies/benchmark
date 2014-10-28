@@ -8,12 +8,12 @@ _PY3 = sys.version_info[0] == 3
 _PYPY = platform.python_implementation() == 'PyPy'
 
 
-def test_example():
+def test_install():
     """
-    Test the ecample provided in the documentation.
-    Shows that the module installs well, and it
-    basically runs. More an integration test than
-    a unit test, but whatev!
+    Test the ecample provided in the documentation. Shows that the module
+    installs well. Not yet intended to show proper operation--just that it
+    properly installs and imports, esp. on Python 3 where previous versions have
+    not run. More an integration test than a unit test, but whatev!
     """
 
     import math
