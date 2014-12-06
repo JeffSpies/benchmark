@@ -1,5 +1,5 @@
 """
-These functions are mostly:
+These functions are used under the Lesser General Public Licence version 3 from:
 
 Copyright (c) Maurice H.T. Ling <mauriceling@acm.org>
 @see: Ling, MHT. 2009. Compendium of Distributions, I: Beta, Binomial, Chi-
