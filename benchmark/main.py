@@ -9,11 +9,13 @@ import time
 import platform
 import os
 import sys
+from six import string_types
+
 
 class BenchmarkProgram(object):
     
     def __init__(self, module="__main__", **kwargs):
-        if isinstance(module, basestring):
+        if isinstance(module, string_types):
             self.module = __import__(module)
         
         benchmarks = self.loadFromModule(self.module)
