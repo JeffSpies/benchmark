@@ -5,10 +5,10 @@ from benchmark import __VERSION__
 setup(
     name='benchmark',
     version=__VERSION__,
-    url='http://jspi.es/benchmark',
+    url='https://github.com/JeffSpies/benchmark',
     license='LICENSE.txt',
     author='Jeffrey R. Spies',
-    author_email='jspies@gmail.com',
+    author_email='code@jeffspies.com',
     description='Python benchmarker / benchmarking framework',
     long_description=open('README.txt').read(),
     packages=['benchmark'],
