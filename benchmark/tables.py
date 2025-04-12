@@ -14,20 +14,20 @@ def get_column_widths(header, table):
 def as_markdown(header, table):
     maxSize = get_column_widths(header, table)
     lines = []
-    lines.append(' | '.join([string.rjust(v, maxSize[i]) for i, v in enumerate(header)]))
+    lines.append(' | '.join([v.rjust(maxSize[i]) for i, v in enumerate(header)]))
     lines.append('-|-'.join(['-'*size for size in maxSize]))
     for row in table:
-        lines.append(' | '.join([string.rjust(v, maxSize[i]) for i, v in enumerate(row)]))
+        lines.append(' | '.join([v.rjust(maxSize[i]) for i, v in enumerate(row)]))
     return os.linesep.join(lines)
-    
+
 def as_rst(header, table):
     maxSize = get_column_widths(header, table)
     lines = []
     lines.append('+-' + '-+-'.join(['-'*size for size in maxSize]) + '-+')
-    lines.append('| ' + ' | '.join([string.rjust(v, maxSize[i]) for i, v in enumerate(header)]) + ' |')
+    lines.append('| ' + ' | '.join([v.rjust(maxSize[i]) for i, v in enumerate(header)]) + ' |')
     lines.append('+=' + '=+='.join(['='*size for size in maxSize]) + '=+')
     for row in table:
-        lines.append('| ' + ' | '.join([string.rjust(v, maxSize[i]) for i, v in enumerate(row)]) + ' |')
+        lines.append('| ' + ' | '.join([v.rjust(maxSize[i]) for i, v in enumerate(row)]) + ' |')
         lines.append('+-' + '-+-'.join(['-'*size for size in maxSize]) + '-+')
     return os.linesep.join(lines)
 

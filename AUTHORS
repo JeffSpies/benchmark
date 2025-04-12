@@ -1,7 +1,12 @@
-`benchmark` is written and maintained by Jeffrey R. Spies and various 
+`benchmark` is written and maintained by Jeffrey R. Spies and various
 contributors:
 
 Development Lead
 ----------------
 
 - Jeffrey R. Spies <jspies@gmail.com>
+
+Other Contributors
+-------------------
+
+- Jonathan Eunice <jonathan.eunice@gmail.com>  (Python 3 compatibility)
